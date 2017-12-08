@@ -1,0 +1,26 @@
+body, html {
+    			height: 100%;
+    			margin: 0;
+			}
+   		.bg{
+   			/*height:650px;*/
+    		background-image:  url("big-bg.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 100%;
+   		}
+
+    	header{
+    		padding: 100px 0;
+    		}
+
+    	.btn-div{margin-top: 150px;}
+
+    	section{
+    		padding: 120px 0;
+    		
+    	}
+    	.my-font{
+    		font-size: 1.5em;
+    	}

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>jquery-ajax</title>
+	 <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+   
+    <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="fb.css">
+    	
+    </style>
+</head>
+<body id="top">
+
+		
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container">
+				<div class="navbar navbar-header">
+
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#id1">
+		  				<span class="icon-bar"></span>
+		  				<span class="icon-bar"></span>
+		  				<span class="icon-bar"></span>
+		  			</button>
+		  			<a href="#top" class="navbar-brand"><img src="fb-logo.jpg" alt="FACEBOOK" height="50px" width="80px"></i></a>
+	  			</div>
+				<div class="collapse navbar-collapse" id="id1">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#profile" style="font-size: 1.5em;color: white;">My-Profile</a></li>
+						<li><a href="#my-feed" style="font-size: 1.5em;color: white;">My-Feeds</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	
+		
+<!--.............................header.................... -->
+
+	<header class="bg">
+
+		<div class="container text-center">
+			
+			<h1 style="color: white; font-size: 8vh;">Get Facebook Graph API Token</h1>
+
+       		<a class="btn btn-primary btn-lg" href="https://developers.facebook.com/tools/explorer/145634995501895/" target="_blank"><span class="glyphicon glyphicon-log-in" style="font-size: 5vh;"></span></a>
+       		<br><br><br>
+			<h2 style="color: white;">Enter your Token</h2>
+			
+			<form class="form-horizontal">
+			      <div class="form-group">
+			     	<input type="text" class="form-control" placeholder="Enter the Token...." id="token" >
+			      </div>
+			      <br><br>
+			      <a class="btn btn-default btn-lg" id="login">Log In</a>
+			</form>
+		</div>
+
+	</header>
+
+
+<!-- ......................My-Profile........................................-->
+
+	<section id="profile" class="bg-danger my-font">
+		<div class="container-fluid" id="div1">
+			<div id="profile-pic"></div>
+			<div class="panel panel-primary">
+  				<div class="panel-heading text-center" style="font-size: 2em;"> My Profile</div>
+  				<div class="panel-body">
+  					<div class="container ">
+  						<div class="row "> 
+	          				<div class="col-xs-6 text-center">Facebook Id </div>
+	          				<div class="col-xs-6" id="Id"></div>
+        				</div>
+        				<hr>
+        				<div class="row "> 
+	          				<div class="col-xs-6 text-center">Name</div>
+	          				<div class="col-xs-6" id="Name"></div>
+        				</div>
+        				<hr>
+        				<div class="row "> 
+	          				<div class="col-xs-6 text-center">Gender</div>
+	          				<div class="col-xs-6" id="Gender"></div>
+        				</div>
+        				<hr>
+        				<div class="row "> 
+	          				<div class="col-xs-6 text-center">BirthDay</div>
+	          				<div class="col-xs-6" id="bday"></div>
+        				</div>
+        				<hr>
+        				<div class="row "> 
+	          				<div class="col-xs-6 text-center">Email</div>
+	          				<div class="col-xs-6" id="email"></div>
+        				</div>
+        				<hr>
+        				<div class="row "> 
+	          				<div class="col-xs-6 text-center">HomeTown</div>
+	          				<div class="col-xs-6" id="town"></div>
+        				</div>
+        				<hr>
+        				<div class="row "> 
+	          				<div class="col-xs-6 text-center">Relationship</div>
+	          				<div class="col-xs-6" id="rel"></div>
+        				</div>
+        				
+        				
+  					</div>
+  					
+  				</div>
+			</div>
+			<div class="text-center">
+				<a class="btn btn-success " id="feed" style="margin-top: 50px;">Click to Get the Feeds!!</a>
+			</div>
+			
+			
+		</div>
+		
+			 
+	</section>	
+
+ <!--.......................feed information.......................... -->
+
+	<section id="my-feed" class="my-font">
+		<div class="container" id="div2">
+			<div class="panel panel-primary">
+				<div class="panel-heading text-center" style="font-size: 2em;"> My Feeds</div>
+					<div class="panel-body">
+						<ul id="feedData"></ul>
+						
+					</div>
+			</div>
+		</div>
+	</section>
+
+
+<!-- scripts -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script src="fb.js"></script>
+</body>
+</html>
